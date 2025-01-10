@@ -1,0 +1,1137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+header {
+  background-color: #f0f0f0;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px ;
+}
+
+.logo{
+  text-decoration: none;
+  color: #006eff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+
+.navigation a{
+  color: #3a6cf4;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 30px;
+}
+
+.navigation a:hover{
+  color: #601cfc;
+}
+
+section {
+  padding: 100px 200px;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+
+.main h3 {
+  color: #000000;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.main h3 span {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4e9eff;
+  font-size: 3em;
+  font-weight: 600;
+}
+.main h4{
+color: #000000;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+  color: #fff;
+  background-color: #3a6cf4;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  transition: 0.7s ease;
+}
+
+.main-btn:hover {
+  background-color: #0a49f6;
+  transform: scale(1.1);
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.7em;
+  padding-right: 30px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #3a6cf4;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f8f2f2;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card .icon {
+  color: #3a6cf4;
+  font-size: 8em;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3{
+  color: #3a6cf4;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.projects {
+  background-color: #000016;
+  padding-top: 30px;
+}
+
+.projects .content {
+  display: flex; /* استخدام flexbox */
+  justify-content: space-between; /* توزيع العناصر بالتساوي */
+  flex-wrap: wrap; /* السماح للعناصر بأن تنتقل إلى السطر التالي إذا كانت كبيرة جدًا */
+  gap: 20px; /* المسافة بين العناصر */
+  margin-top: 30px;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 14em;
+  width: 30%; /* تحديد عرض البطاقة */
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.7s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* تكبير البطاقة قليلاً عند التمرير */
+}
+
+.project-card:hover .project-image {
+  opacity: 0.9;
+}
+
+.project-image img {
+  width: 100%;
+}
+
+.project-info {
+  padding: 1em;
+}
+
+.project-category {
+  font-size: 0.8em;
+  color: #000;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.play-now {
+  text-decoration: none;
+  color: #3a6cf4;
+}
+
+.play-now:hover {
+  color: #601cfc;
+}
+
+/* تكبير حجم الصفحة */
+#official-account {
+  background-color: #fff;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* عنوان الصفحة */
+#official-account .title {
+  color: #000;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+/* الحاوية */
+.official-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* تصميم البطاقة */
+.official-account-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  width: 15em;
+}
+
+/* شعار القناة */
+.official-account-image a img {
+  width: 12em;
+  height: 12em;
+  border-radius: 50%; /* دائري للشعار */
+  object-fit: cover;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* تأثير التكبير عند المرور على الشعار */
+.official-account-image a img:hover {
+  transform: scale(1.2); /* تكبير الشعار عند المرور */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* إضافة تأثير ظل */
+}
+
+/* الصور المصغرة للفيديوهات */
+.video-photo {
+  display: none; /* مخفية افتراضيًا */
+  margin-top: 20px;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-photo a img {
+  width: 8em;
+  height: 8em;
+  border-radius: 10px; /* مربعة */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* تكبير الصور عند التمرير */
+.video-photo a img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* إظهار الصور المصغرة عند تمرير الماوس على شعار القناة */
+.official-account-image:hover + .video-photo {
+  display: flex;
+}
+
+
+
+
+
+
+/* إضافة حركة الصورة للأعلى ولأسفل */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* تتحرك للأعلى بمقدار 20px */
+  }
+  100% {
+    transform: translateY(0); /* تعود للمكان الأصلي */
+  }
+}
+
+/* تطبيق الحركة على صورة الشعار */
+.official-account-image a img {
+  width: 12em;
+  height: 12em;
+  border-radius: 50%; /* دائري للشعار */
+  object-fit: cover;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  animation: moveUpDown 2s infinite ease-in-out; /* تطبيق الحركة */
+}
+
+/* تأثير التكبير عند المرور على الشعار */
+.official-account-image a img:hover {
+  transform: scale(1.2); /* تكبير الشعار عند المرور */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* إضافة تأثير ظل */
+}
+
+/* إضافة حركة للصورة فقط */
+@keyframes moveUpDownMainImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* تتحرك للأعلى بمقدار 20px */
+  }
+  100% {
+    transform: translateY(0); /* تعود للمكان الأصلي */
+  }
+}
+
+/* تحديد الصورة داخل الـ section.main */
+.main-image {
+  animation: moveUpDownMainImage 1.5s infinite ease-in-out; /* تطبيق الحركة بسرعة أكبر (1.5 ثانية) */
+  
+  /* تحريك الصورة قليلاً إلى اليمين */
+  margin-left: 20px; /* حرك الصورة 20px إلى اليمين */
+  /* أو يمكن استخدام transform */
+  transform: translateX(20px); /* حرك الصورة بمقدار 20px إلى اليمين */
+}
+footer {
+  text-align: center; /* لتوسيط النص */
+  background-color: #333; /* لون الخلفية */
+  color: #fff; /* لون النص */
+  padding: 20px; /* إضافة حواف */
+  position: relative; /* تفعيل الوضع النسبي */
+  bottom: 0; /* وضعه في أسفل الصفحة */
+  width: 100%; /* ملء العرض بالكامل */
+  font-size: 1.2em; /* تكبير حجم النص */
+}
+
+footer p {
+  margin: 0; /* إزالة الهوامش */
+}
+/* إعدادات عامة */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+/* تحسين تصميم الهيدر */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* تصميم متجاوب للهيدر */
+@media (max-width: 768px) {
+  .menu-icon {
+      display: block;
+  }
+
+  .menu-toggle:checked + .menu-icon + .navigation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navigation {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .navigation a {
+      margin: 10px 0;
+  }
+}
+
+/* تصميم قسم القنوات */
+.official-account-card {
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1 1 300px;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.official-account-card:hover {
+  transform: scale(1.05);
+}
+
+.official-account-image img {
+  width: 100%;
+  border-radius: 50%;
+  max-width: 150px;
+  margin: 0 auto 15px;
+}
+
+/* تصميم متجاوب للقسم */
+@media (max-width: 768px) {
+  .official-account .content {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+.official-account .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.official-account-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.official-account-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.official-account-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.official-account-card h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.official-account-card p {
+  font-size: 0.9em;
+  color: #666;
+}
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+      display: block;
+      cursor: pointer;
+  }
+
+  .navigation {
+      display: none;
+  }
+
+  .menu-toggle:checked + .menu-icon + .navigation {
+      display: flex;
+      flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  body {
+      font-size: 14px;
+  }
+
+  header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navigation a {
+      font-size: 1em;
+      padding: 8px;
+  }
+
+  .official-account-card {
+      width: 90%;
+      padding: 15px;
+  }
+
+  .official-account-image img {
+      width: 100px;
+      height: 100px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px; /* تقليل الحشو في الشاشات الصغيرة */
+  }
+
+  .navigation a {
+    font-size: 1em; /* تصغير الخط قليلاً */
+    padding: 8px; /* تقليل الحشو */
+  }
+
+  .menu-toggle:checked + .menu-icon + .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto; /* لضبط ارتفاع الصور بشكل متناسب مع عرضها */
+}
+@media (max-width: 768px) {
+  .card:hover {
+    transform: none; /* إيقاف تأثير التكبير في الشاشات الصغيرة */
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 14px; /* تقليل حجم الخط قليلاً للأجهزة الصغيرة */
+  }
+  
+  .main h3, .main h4 {
+    font-size: 1.2em; /* تقليل حجم الخط في العناوين */
+  }
+}
+/* لتحسين النصوص والأزرار في الشاشات الصغيرة */
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px; /* تقليل الحشو */
+  }
+
+  .navigation a {
+    font-size: 1.1em;
+    padding-left: 10px;
+  }
+
+  .main-btn {
+    font-size: 1em;
+    padding: 0.5em 1.5em; /* تقليل حجم الأزرار */
+  }
+
+  .official-account-card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .official-account-image img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .main h3, .main h4 {
+    font-size: 1.2em; /* تقليل حجم الخط في العناوين */
+  }
+
+  /* إخفاء تأثيرات التمرير */
+  .card:hover, .project-card:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .navigation a {
+    font-size: 1em;
+    padding: 8px;
+  }
+}
+/* إخفاء الصورة الشخصية على الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .main-image {
+    display: none; /* إخفاء الصورة الشخصية */
+  }
+}
+/* تحسين حجم الأزرار والنصوص */
+@media (max-width: 768px) {
+  .main-btn {
+    font-size: 1em;
+    padding: 0.7em 2em; /* تقليل حجم الزر */
+  }
+
+  .official-account-card h3 {
+    font-size: 1.5em;
+  }
+
+  .official-account-card p {
+    font-size: 1em;
+  }
+}
+/* تحسين حجم النص في الـ footer */
+@media (max-width: 768px) {
+  footer p {
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  /* تعديل حجم النصوص في قسم "main" ليظهر بشكل أكبر على الموبايل */
+  .main h3 {
+    font-size: 2.5em;  /* زيادة حجم العنوان الرئيسي */
+  }
+
+  .main h4 {
+    font-size: 1.5em;  /* زيادة حجم العنوان الفرعي */
+  }
+
+  /* جعل الأزرار أكبر */
+  .main-btn {
+    font-size: 1.2em;  /* زيادة حجم الخط داخل الزر */
+    padding: 1em 2em;   /* زيادة حجم الزر */
+  }
+
+  /* تعديل حجم الصور في قسم "main" */
+  .main-image {
+    width: 100%;   /* جعل الصورة تأخذ عرض الشاشة بالكامل */
+    height: auto;  /* الحفاظ على التناسب */
+  }
+
+  /* تحسين عرض البطاقات في قسم "services" */
+  .cards .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;  /* جعل عرض البطاقات أكبر */
+    margin-bottom: 20px;
+  }
+
+  .card .icon {
+    font-size: 3em;  /* زيادة حجم الأيقونة */
+  }
+
+  /* تحسين حجم النص في البطاقة */
+  .card .info h3 {
+    font-size: 1.6em;  /* زيادة حجم العنوان */
+  }
+
+  .card .info p {
+    font-size: 1.1em;  /* زيادة حجم النص */
+  }
+
+  /* تحسين عرض قسم "official-account" */
+  .official-account-card {
+    width: 90%;  /* جعل البطاقات أكبر */
+    margin-bottom: 20px;
+  }
+
+  .official-account-card h3 {
+    font-size: 1.8em;  /* زيادة حجم العنوان */
+  }
+
+  .official-account-card p {
+    font-size: 1.2em;  /* زيادة حجم النص */
+  }
+
+  .official-account-image img {
+    width: 80%;  /* جعل الصور تأخذ عرض أكبر */
+    height: auto;
+  }
+
+  /* تحسين عرض قسم "projects" */
+  .project-card {
+    width: 90%;  /* جعل عرض المشاريع أكبر */
+    margin-bottom: 20px;
+  }
+
+  .project-info p {
+    font-size: 1.2em;  /* زيادة حجم النص */
+  }
+
+  .project-info .title {
+    font-size: 1.4em;  /* زيادة حجم العنوان */
+  }
+
+  /* تحسين عرض الصور في المشاريع */
+  .project-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  /* تحسين عرض القائمة على الشاشات الصغيرة */
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: none;
+    padding: 20px;
+  }
+
+  #menu-toggle:checked + .menu-icon + .navigation {
+    display: flex;
+  }
+
+  .navigation a {
+    font-size: 1.5em;  /* زيادة حجم الخط في القائمة */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .menu-icon {
+    font-size: 2.5em;  /* زيادة حجم أيقونة القائمة */
+  }
+}
+@media (max-width: 768px) {
+  /* تحسين عرض قسم 'main' */
+  .main {
+    text-align: center;
+    padding: 2em 0;
+  }
+
+  /* تعديل حجم النص في قسم main */
+  .main h3 {
+    font-size: 2.5em;  /* زيادة حجم النص */
+  }
+
+  .main h4 {
+    font-size: 1.5em;  /* زيادة حجم النص */
+  }
+
+  .main-btn {
+    padding: 1em 2em;   /* زيادة حجم الزر */
+    font-size: 1.2em;  /* زيادة حجم الخط داخل الزر */
+  }
+
+  .main-image {
+    width: 100%;  /* جعل الصورة تأخذ عرض كامل */
+    height: auto;  /* الحفاظ على التناسب */
+  }
+}
+@media (max-width: 768px) {
+  .cards .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;  /* جعل عرض البطاقة أكبر */
+    margin-bottom: 20px;
+  }
+
+  .card .icon {
+    font-size: 3em;  /* زيادة حجم الأيقونة */
+  }
+
+  .card .info h3 {
+    font-size: 1.6em;  /* زيادة حجم العنوان */
+  }
+
+  .card .info p {
+    font-size: 1.1em;  /* زيادة حجم النص */
+  }
+}
+@media (max-width: 768px) {
+  .projects .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;  /* جعل عرض المشاريع أكبر */
+    margin-bottom: 20px;
+  }
+
+  .project-image img {
+    width: 100%;  /* جعل الصور تأخذ عرض كامل */
+    height: auto;
+  }
+
+  .project-info p {
+    font-size: 1.2em;  /* زيادة حجم النص */
+  }
+
+  .project-info .title {
+    font-size: 1.4em;  /* زيادة حجم العنوان */
+  }
+
+  .project-info .play.now {
+    font-size: 1.2em;  /* زيادة حجم النص داخل رابط اللعب */
+  }
+}
+@media (max-width: 768px) {
+  .main-btn, .play.now {
+    font-size: 1.2em;  /* زيادة حجم الأزرار */
+    padding: 1em 2em;
+  }
+
+  img {
+    max-width: 100%; /* تأكد من أن الصور لا تتجاوز العرض */
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-image {
+    display: none;  /* إخفاء الصورة الشخصية */
+  }
+}
+@media (max-width: 768px) {
+  /* تحسين قسم 'main' */
+  .main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* جعل القسم يأخذ الارتفاع الكامل للصفحة */
+    padding: 0 20px;
+  }
+
+  .main h3 {
+    font-size: 2.5em;  /* زيادة حجم النص */
+  }
+
+  .main h4 {
+    font-size: 1.5em;  /* زيادة حجم النص */
+  }
+
+  .main-btn {
+    padding: 1em 2em;   /* زيادة حجم الزر */
+    font-size: 1.2em;  /* زيادة حجم الخط داخل الزر */
+  }
+
+  .main-image {
+    display: block;
+    width: 100%;  /* جعل الصورة تأخذ عرض كامل */
+    height: auto;
+    margin-top: 20px;  /* إضافة مسافة بين النص والصورة */
+  }
+}
+@media (max-width: 768px) {
+  /* تحسين قسم الخدمات */
+  .cards .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;  /* جعل عرض البطاقة أكبر */
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;  /* جعل النص في المنتصف */
+  }
+
+  .card .icon {
+    font-size: 3.5em;  /* زيادة حجم الأيقونة */
+    margin-bottom: 10px;
+  }
+
+  .card .info h3 {
+    font-size: 1.8em;  /* زيادة حجم العنوان */
+  }
+
+  .card .info p {
+    font-size: 1.2em;  /* زيادة حجم النص */
+  }
+}
+@media (max-width: 768px) {
+  /* تحسين قسم المشاريع */
+  .projects .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;  /* جعل عرض المشاريع أكبر */
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;  /* جعل النص في المنتصف */
+  }
+
+  .project-image img {
+    width: 100%;  /* جعل الصور تأخذ عرض كامل */
+    height: auto;
+  }
+
+  .project-info p {
+    font-size: 1.3em;  /* زيادة حجم النص */
+  }
+
+  .project-info .title {
+    font-size: 1.6em;  /* زيادة حجم العنوان */
+  }
+
+  .project-info .play.now {
+    font-size: 1.3em;  /* زيادة حجم النص داخل رابط اللعب */
+  }
+}
+@media (max-width: 768px) {
+  /* تطبيق التعديلات على الهوامش والحشوات في الأقسام المختلفة */
+  .main, .cards, .projects {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 2em;
+    text-align: center;  /* جعل العناوين في المنتصف */
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    font-size: 2em;  /* زيادة حجم الأيقونات */
+    margin: 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  /* تحسين قسم 'main' في الصفحة الرئيسية */
+  .main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* جعل القسم يأخذ الارتفاع الكامل للصفحة */
+    padding: 0 20px;
+    margin-top: 50px; /* إضافة مسافة بين الهيدر والنص */
+  }
+
+  .main h3 {
+    font-size: 2.5em;  /* زيادة حجم النص */
+    margin-top: 20px;  /* زيادة المسافة بين النص والهيدر */
+  }
+
+  .main h4 {
+    font-size: 1.5em;  /* زيادة حجم النص */
+  }
+
+  .main-btn {
+    padding: 1em 2em;   /* زيادة حجم الزر */
+    font-size: 1.2em;  /* زيادة حجم الخط داخل الزر */
+  }
+
+  .main-image {
+    display: block;
+    width: 100%;  /* جعل الصورة تأخذ عرض كامل */
+    height: auto;
+    margin-top: 20px;  /* إضافة مسافة بين النص والصورة */
+  }
+}
+@media (max-width: 768px) {
+  /* تحسين قسم الخدمات */
+  .cards .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  /* جعل القسم يشغل مساحة كاملة من الشاشة */
+  }
+
+  .title {
+    font-size: 2.5em;  /* زيادة حجم عنوان القسم */
+    text-align: center;  /* محاذاة العنوان في المنتصف */
+    margin-bottom: 30px;  /* إضافة مسافة أسفل العنوان */
+  }
+
+  .card {
+    width: 90%;  /* جعل عرض البطاقة أكبر */
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;  /* جعل النص في المنتصف */
+  }
+
+  .card .icon {
+    font-size: 3.5em;  /* زيادة حجم الأيقونة */
+    margin-bottom: 10px;
+  }
+
+  .card .info h3 {
+    font-size: 1.8em;  /* زيادة حجم العنوان */
+  }
+
+  .card .info p {
+    font-size: 1.2em;  /* زيادة حجم النص */
+  }
+}
+/* الهيدر ثابت في الأعلى */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;  /* اخترنا لون خلفية للهيدر */
+  padding: 10px 20px;
+  z-index: 1000;  /* تأكد من أن الهيدر يظهر فوق باقي العناصر */
+}
+
+/* تحسين التنسيق عندما يفتح من الهاتف */
+@media (max-width: 768px) {
+  /* إخفاء الصورة الشخصية في قسم "Home" على الشاشات الصغيرة */
+  .main-image {
+    display: none;
+  }
+  
+  /* تنسيق البرجر مينيو */
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .navigation {
+    display: none; /* إخفاء قائمة التنقل بشكل افتراضي */
+    flex-direction: column;
+    position: fixed;
+    top: 60px; /* المسافة تحت الهيدر */
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  #menu-toggle:checked + .menu-icon + .navigation {
+    display: flex; /* إظهار القائمة عند تفعيل البرجر */
+  }
+
+  .navigation a {
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+
+  .navigation a:hover {
+    background-color: #555;
+  }
+}
+@media (max-width: 768px) {
+  .cards {
+    width: 100%;  /* زيادة عرض قسم الخدمات */
+  }
+
+  .title {
+    font-size: 2.5em;  /* زيادة حجم العنوان */
+    text-align: center;  /* محاذاة العنوان في المنتصف */
+    margin-bottom: 30px;  /* إضافة مسافة أسفل العنوان */
+  }
+
+  .services-header {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+}
